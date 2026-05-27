@@ -1,0 +1,151 @@
+body {
+    background-color: #0e1117;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------------- Main Title ---------------- */
+
+.main-title {
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 18px rgba(0,0,0,0.35);
+}
+
+.main-title h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.main-title p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ---------------- Cards ---------------- */
+
+.card {
+    background-color: #161b22;
+    padding: 22px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid #30363d;
+}
+
+/* ---------------- Prediction Box ---------------- */
+
+.prediction-box {
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.3);
+}
+
+/* ---------------- Footer ---------------- */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+/* ---------------- Sidebar ---------------- */
+
+section[data-testid="stSidebar"] {
+    background-color: #161b22;
+    border-right: 1px solid #30363d;
+}
+
+/* ---------------- Metrics ---------------- */
+
+[data-testid="metric-container"] {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 18px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.25);
+}
+
+/* ---------------- Buttons ---------------- */
+
+.stButton > button {
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    transform: scale(1.02);
+}
+
+/* ---------------- Download Button ---------------- */
+
+.stDownloadButton > button {
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+}
+
+/* ---------------- Sliders ---------------- */
+
+.stSlider {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ---------------- DataFrame ---------------- */
+
+[data-testid="stDataFrame"] {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ---------------- Tables ---------------- */
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ---------------- Scrollbar ---------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161b22;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0072ff;
+    border-radius: 10px;
+}
+
+/* ---------------- Plot Background ---------------- */
+
+.js-plotly-plot {
+    border-radius: 15px;
+    overflow: hidden;
+}
