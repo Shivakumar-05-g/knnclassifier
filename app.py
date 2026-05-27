@@ -522,36 +522,3 @@ st.markdown(
     '</div>',
     unsafe_allow_html=True
 )
-
-# ---------------- DOWNLOAD PREDICTIONS ---------------- #
-
-st.markdown("---")
-
-st.markdown(
-    '<div class="card">',
-    unsafe_allow_html=True
-)
-
-st.subheader("📥 Download Predictions")
-
-pred_df = pd.DataFrame({
-    "Actual": encoder.inverse_transform(y_test),
-    "Predicted": encoder.inverse_transform(y_pred)
-})
-
-csv = pred_df.to_csv(
-    index=False
-).encode("utf-8")
-
-st.download_button(
-    label="Download CSV",
-    data=csv,
-    file_name="mall_customer_predictions.csv",
-    mime="text/csv"
-)
-
-st.markdown(
-    '</div>',
-    unsafe_allow_html=True
-)
-
